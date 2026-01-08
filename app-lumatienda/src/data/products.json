@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "name": "Rango VIP",
+    "description": "Acceso exclusivo, comandos especiales y prefijo VIP en el chat.",
+    "price": 19.99,
+    "currency": "USD",
+    "image": "/images/products/vip_rank.svg",
+    "category": "Rangos"
+  },
+  {
+    "id": "2",
+    "name": "Kit Inicial Diamante",
+    "description": "Obtén herramientas y armadura de diamante para empezar con ventaja.",
+    "price": 9.99,
+    "currency": "USD",
+    "image": "/images/products/diamond_kit.svg",
+    "category": "Kits"
+  },
+  {
+    "id": "3",
+    "name": "Mascota Creeper",
+    "description": "Una mascota Creeper que te seguirá a todas partes (no explota).",
+    "price": 5.99,
+    "currency": "USD",
+    "image": "/images/products/creeper_pet.svg",
+    "category": "Cosméticos"
+  },
+  {
+    "id": "4",
+    "name": "Paquete de Bloques Decorativos",
+    "description": "Acceso a una colección de bloques decorativos únicos para tus construcciones.",
+    "price": 7.50,
+    "currency": "USD",
+    "image": "/images/products/decorative_blocks.svg",
+    "category": "Bloques"
+  }
+]
