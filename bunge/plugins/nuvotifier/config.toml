@@ -1,0 +1,80 @@
+# La IP en la que debe escuchar. Usa 0.0.0.0 si deseas escuchar en todas las interfaces de tu servidor. (Todas las direcciones IP)
+# Esto usa por defecto la IP que hayas configurado para que tu servidor escuche, o 0.0.0.0 si no has configurado ninguna.
+host = "0.0.0.0"
+
+# Puerto en el que se escucharán nuevos votos
+port = 8192
+
+# Si configuras esta opción en true, desactivarás el manejo de paquetes del Protocolo v1. Aunque el protocolo antiguo no es seguro,
+# actualmente NO se recomienda activar esta opción, ya que la mayoría de páginas de votación solo soportan el protocolo antiguo.
+# Sin embargo, si estás usando el sistema de reenvío por proxy de NuVotifier, activar esta opción aumentará la seguridad del servidor.
+disable-v1-protocol = false
+
+# Todos los tokens, etiquetados por el serviceName de cada lista de servidores.
+[tokens]
+# Token por defecto para todas las listas de servidores si no se especifica otro.
+default = "b53gnomg2rae8cnbu3vmqjt754"
+
+# Sección de configuración para todo el reenvío de votos hacia NuVotifier
+[forwarding]
+# Define si se debe configurar un método remoto para el reenvío. Métodos compatibles:
+# - none - No configura ningún método de reenvío.
+# - pluginMessaging - Configura el envío mediante Plugin Messaging.
+# - proxy - Reenvía votos a otros servidores NuVotifier desde este servidor.
+method = "proxy"
+
+[forwarding.pluginMessaging]
+channel = "nuvotifier:votes"
+
+# Solo enviar votos a ciertos servidores. Si un servidor está en excludedServers, los votos NO se reenviarán hacia él.
+# Si excludedServers no está presente, los votos se enviarán a todos los servidores.
+# Si onlySendToJoinedServer es true y un jugador está en uno de estos servidores, NuVotifier procesará el voto como si el
+# jugador no estuviera en la red en absoluto.
+# excludedServers = ["server1", "server2"]
+
+# Si se descomenta, convierte excludedServers en includedServers, donde solo los servidores dentro de la lista serán usados.
+# whitelist = true
+
+# Define qué caché usar si no hay jugadores en el servidor al que se envía el voto. Caches compatibles:
+# - none - Los votos simplemente se perderán cuando no haya jugadores presentes.
+# - memory - Los votos se guardan en memoria cuando no hay jugadores presentes. Se perderán cuando Bungee se reinicie.
+# - file - Los votos se guardan en un archivo local cada 3 minutos y al apagar, y se recargan cuando Bungee se reinicia. Es adecuado
+#   para la mayoría de configuraciones.
+cache = "file"
+
+# Solo envía el voto al servidor en el que el jugador está conectado actualmente.
+onlySendToJoinedServer = false
+
+# Define a qué servidor enviar el voto en caso de que el jugador no esté online cuando vote.
+# Si NO quieres que se reenvíe a un servidor alterno, deja este valor vacío ('')
+# ¡SOLO SE USA SI onlySendToJoinedServer es true!!
+joinedServerFallback = "Hub"
+
+# Define qué tan rápido descargar votos sobre la conexión del jugador al vaciar la caché, en votos por segundo
+dumpRate = 5
+
+[forwarding.file-cache]
+# Opciones para la caché en archivo.
+name = "cached-votes.json"
+# Días antes de que un voto sea considerado "muerto" y eliminado de la caché con una advertencia en consola. -1 significa sin límite.
+cacheTime = 10
+
+[forwarding.memory-cache]
+# Opciones para la caché en memoria.
+name = "cached-votes.json"
+# Días antes de que un voto sea considerado "muerto" y eliminado de la caché con advertencia. -1 significa sin límite. Los votos también
+# se eliminan al reiniciar.
+cacheTime = 10
+
+[forwarding.proxy]
+# Especifica servidores para reenviar votos.
+
+[forwarding.proxy.boxpvp]
+address = "localhost"
+port = 8090
+token = "gsb1667id47pgmecpm2jpjlq3n"
+
+[forwarding.proxy.skypvp]
+address = "localhost"
+port = 8091
+token = "36ejelbaa08qib5snl712hsqdp"

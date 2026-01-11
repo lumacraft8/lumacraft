@@ -1,0 +1,54 @@
+# Archivos de registro
+logs/
+*.log
+latest.log
+
+# Caché y datos de sesión
+cache/
+.cache/
+*.json
+*.yml
+session.lock
+*.dat
+*.dat_old
+
+# Archivos de la EULA
+eula.txt
+
+# Reportes de crasheos
+crash-reports/
+
+# Bases de datos y archivos de jugador
+usercache.json
+banned-ips.json
+banned-players.json
+ops.json
+whitelist.json
+*.db
+*.mv.db
+
+# Mundos (generalmente muy grandes, descomentar si se desea subirlos)
+# world/
+# world_nether/
+# world_the_end/
+# spawn/
+
+# Archivos del servidor y librerías
+server.jar
+libraries/
+
+# Backups
+*.yml.backup
+*.conf.backup
+*.properties.backup
+*.zip
+
+# Plugins específicos que guardan datos sensibles o son muy pesados
+plugins/bStats/
+plugins/spark/
+plugins/L_Cosmeticos/cosmeticos.db
+plugins/ajParkour/scores.db
+plugins/Pl-Hide-Pro/data.db
+plugins/nLogin/nlogin.db
+plugins/nlogina/nlogin.db
+plugins/LuckPerms/luckperms-h2-v2.mv.db

@@ -1,0 +1,17 @@
+# LuckPerms UUID lookup cache
+71045cb6-339b-3bf8-a144-a54279663553:InfinityMiles
+7e20a092-3c3b-3ea5-b296-d34e2bb49d62:Sonicdeprueba
+2ecc8a72-8374-36fe-b4dc-c312543700e9:Discohikorybrs
+d25dc17f-1840-49cf-a811-268d20d29c45:ArribaLaChapiza
+7dc90e24-f25a-3ad0-8cf2-84f6fb1f9634:yotas
+ec66b136-8850-3b46-a6c8-4c51743dcfea:SAP_4
+a17fbd2f-a8e5-4775-9a3e-7e6be415016b:SrxMateo
+2ac9261d-fb84-48cb-9853-c9cd57e3c60a:yurii0
+00000000-0000-0000-0009-01f2beb94aee:_SrxTyrone
+8058bd6b-358a-308c-97a0-dd101b0a9061:lkzxzz
+eda9dedf-8cc6-4e84-9394-66a1871c12ef:GamingMonter
+ec4cdb4c-583c-494e-8173-0bacc7a24616:santorar
+738aadc1-1fc9-3628-bbae-00ad965b340e:el_games
+774de08e-a02c-4f60-a351-9a41de48caeb:SonicTheGames
+a19690b7-4028-3994-8d6d-67e5da5276da:Azez
+20f1f29c-bdfa-4425-aceb-c2a8fe9535f9:BlueDog2010
