@@ -52,3 +52,7 @@ plugins/Pl-Hide-Pro/data.db
 plugins/nLogin/nlogin.db
 plugins/nlogina/nlogin.db
 plugins/LuckPerms/luckperms-h2-v2.mv.db
+
+# Node.js
+node_modules/
+.npm/
